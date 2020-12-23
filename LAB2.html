@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let sum = 0;
+
+      //   ข้อที่ 1
+      //   num = (a, b) => {
+      //     let gcd = 1;
+      //     for (let i = 2; i <= a && i <= b; i++) {
+      //       if (a % i == 0 && b % i == 0) {
+      //         gcd = i;
+      //       }
+      //     }
+      //     console.log('OUTPUT\n');
+      //     console.log('a = ', a / gcd, '\nb = ', b / gcd);
+      //   };
+      //   const a = +prompt('Please enter a');
+      //   const b = +prompt('Please enter b');
+      //   console.log('--- 1 ---');
+      //   console.log('INPUT\n');
+      //   console.log('a = ', a, '\nb = ', b);
+      //   num(a, b);
+
+      //   ข้อที่ 2
+      // num2 = (sum) => {
+      //   for (let i = 160; i <= 2048; i += 2) {
+      //     sum += i;
+      //   }
+      //   return sum;
+      // };
+      // console.log(num2(sum));
+
+      // ข้อที่ 3
+      // num3 = (sum) => {
+      //   for (let i = 163; i <= 815; i += 4) {
+      //     sum += i;
+      //   }
+      //   return sum;
+      // };
+      // console.log(num3(sum));
+
+      // ข้อที่ 4
+      // let fibonacci = +prompt('Enter n number');
+      // num4 = (sum) => {
+      //   let a = 1;
+      //   let b = 0;
+      //   for (let i = 0; i < fibonacci - 1; i++) {
+      //     sum = a;
+      //     a += b;
+      //     b = sum;
+      //   }
+      //   return b;
+      // };
+      // console.log('input\n', 'n =', fibonacci);
+      // console.log('output\n', num4(sum));
+
+      // ข้อที่ 5
+      // num5 = (sum) => {
+      //   for (let i = 1; i <= 18954; i++) {
+      //     if (i % 2 === 0) {
+      //       sum -= i;
+      //     } else {
+      //       sum += i;
+      //     }
+      //   }
+      //   return sum;
+      // };
+      // console.log(num5(sum));
+
+      // ข้อที่ 6
+      // num6 = (sum) => {
+      //   for (let i = 1; i <= 87; i++) {
+      //     sum += i * (i + 1);
+      //   }
+      //   return sum;
+      // };
+      // console.log(num6(sum));
+
+      // ข้อที่ 7
+      // num7 = (sum) => {
+      //   for (let i = 1; i <= 87; i++) {
+      //     sum += i * (i + 1) * (i + 2);
+      //   }
+      //   return sum;
+      // };
+      // console.log(num7(sum));
+
+      // ข้อที่ 8 - 9
+      // num8 = (sum) => {
+      //   for (let i = 1; i <= 155; i += 2) {
+      //     sum += i * (i + 2) * (i + 4);
+      //   }
+      //   return sum;
+      // };
+      // console.log(num8(sum));
+
+      // ข้อที่ 10
+      // num10 = () => {
+      //   let num = prompt('Enter the Number!!: ');
+      //   let total = [];
+      //   while (num !== 'stop') {
+      //     total.push(num);
+      //     num = prompt('Enter the Number!!: ');
+      //   }
+      //   return Math.min(...total);
+      // };
+      // console.log(num10());
+
+      // ข้อที่ 11
+      // num11 = () => {
+      //   let num = prompt('Enter the Number!!: ');
+      //   let total = [];
+      //   while (num !== 'stop') {
+      //     total.push(num);
+      //     num = prompt('Enter the Number!!: ');
+      //   }
+      //   let result = total.sort((a, b) => a - b);
+      //   return result.filter((item, idx) => idx < 3);
+      // };
+      // console.log(num11());
+
+      // ข้อที่ 12
+      // num12 = () => {
+      //   let num = prompt('Enter the Number!!: ');
+      //   let total = [];
+      //   while (num !== 'stop') {
+      //     total.push(num);
+      //     num = prompt('Enter the Number!!: ');
+      //   }
+      //   let result = total.sort((a, b) => a - b);
+      //   let min = Math.min(...result);
+      //   let max = Math.max(...result);
+      //   return [min, max];
+      // };
+      // console.log(num12());
+
+      // ข้อที่ 13
+      // num13 = () => {
+      //   let num = prompt('Enter the Number!!: ');
+      //   let total = [];
+      //   while (num !== 'stop') {
+      //     total.push(num);
+      //     num = prompt('Enter the Number!!: ');
+      //   }
+      //   console.log(total);
+      //   let result = total.sort((a, b) => a - b);
+      //   let min = Math.min(...result);
+      //   let max = Math.max(...result);
+      //   return min - max;
+      // };
+      // console.log(num13());
+
+      // ข้อที่ 14
+      // num14 = () => {
+      //   let num = prompt('Enter the Number!!: ');
+      //   let total = [];
+      //   while (num !== 'stop') {
+      //     total.push(num);
+      //     num = prompt('Enter the Number!!: ');
+      //   }
+      //   console.log(total);
+      //   let sum = total.map((e) => Number(e)).reduce((acc, value) => acc + value, 0);
+      //   let avg = sum / total.length;
+      //   return avg;
+      // };
+      // console.log(num14());
+
+      // ข้อที่ 15
+      let reverseNumber = (num) => {
+        let str = num.toString().split('');
+        str = str.reverse().join('');
+        return parseInt(str) * Math.sign(num);
+      };
+      const input15 = +prompt('Please enter number');
+      console.log('--- 15 ---');
+      console.log('INPUT\n', input15);
+      console.log('OUTPUT\n', reverseNumber(input15));
+    </script>
+  </body>
+</html>

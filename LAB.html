@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      //   ข้อ1
+      //   function draw() {
+      //     let star = +prompt('Insert n here!!');
+      //     let msg = '';
+      //     for (let i = 0; i < star; i++) {
+      //       msg += '*';
+      //     }
+      //     return msg;
+      //   }
+      //   console.log(draw());
+
+      //   ข้อ2
+      //   draw2 = () => {
+      //     let star = +prompt('Insert n here!!');
+      //     let msg = '';
+      //     for (let i = 0; i < star; i++) {
+      //       for (let j = 0; j < star; j++) {
+      //         msg += '*';
+      //       }
+      //       msg += '\n';
+      //     }
+      //     return msg;
+      //   };
+      //   console.log(draw2());
+
+      //   ข้อ3
+      //   draw3 = () => {
+      //     let num = +prompt('Insert n here!!');
+      //     let msg = '';
+      //     for (i = 0; i < num; i++) {
+      //       for (j = 1; j <= num; j++) {
+      //         msg += j;
+      //       }
+      //       msg += '\n';
+      //     }
+      //     return msg;
+      //   };
+      //   console.log(draw3());
+
+      //   ข้อ4
+      //   draw4 = () => {
+      //     let num = +prompt('Insert n here!!');
+      //     let msg = '';
+      //     for (i = 1; i <= num; i++) {
+      //       for (j = 0; j < num; j++) {
+      //         msg += i;
+      //       }
+      //       msg += '\n';
+      //     }
+      //     return msg;
+      //   };
+      //   console.log(draw4());
+
+      //   ข้อ5
+      //   draw5 = () => {
+      //     let num = +prompt('Insert n here!!');
+      //     let msg = '';
+      //     for (i = num; i <= 1; i--) {
+      //       for (j = 0; j < num; j++) {
+      //         msg += i;
+      //       }
+      //       msg += '\n';
+      //     }
+      //     return msg;
+      //   };
+      //   console.log(draw5());
+
+      // ข้อ6
+      // draw6 = () => {
+      //   let num = +prompt('Insert n here!!');
+      //   let msg = '';
+      //   let str = 1;
+      //   for (i = 1; i <= num; i++) {
+      //     for (j = 1; j <= num; j++) {
+      //       msg += str;
+      //       str += 1;
+      //     }
+      //     msg += '\n';
+      //   }
+      //   return msg;
+      // };
+      // console.log(draw6());
+
+      //   ข้อ7;
+      // draw7 = () => {
+      //   let num = +prompt('Insert n here!!');
+      //   let msg = '';
+      //   let str = num * num;
+      //   for (i = 1; i <= num; i++) {
+      //     for (j = 1; j <= num; j++) {
+      //       msg += str;
+      //       str -= 1;
+      //     }
+      //     msg += '\n';
+      //   }
+      //   return msg;
+      // };
+      // console.log(draw7());
+
+      // ข้อ8
+      // draw8 = () => {
+      //   let num = +prompt('Insert n here!!');
+      //   let msg = '';
+      //   let str = 0;
+      //   for (i = 1; i <= num; i++) {
+      //     msg = msg + str;
+      //     str += 2;
+      //     msg += '\n';
+      //   }
+      //   return msg;
+      // };
+      // console.log(draw8());
+
+      // ข้อ9;
+      // draw9 = () => {
+      //   let num = +prompt('Insert n here!!');
+      //   let msg = '';
+      //   let str = 0;
+      //   for (i = 1; i <= num; i++) {
+      //     str += 2;
+      //     msg += str;
+      //     msg += '\n';
+      //   }
+      //   return msg;
+      // };
+      // console.log(draw9());
+
+      // ข้อ10
+      // draw10 = () => {
+      //   let num = +prompt('Insert n here!!');
+      //   let msg = '';
+      //   for (i = 1; i <= num; i++) {
+      //     for (j = 1; j <= num; j++) {
+      //       msg += `${i * j}`;
+      //     }
+      //     msg += '\n';
+      //   }
+      //   return msg;
+      // };
+      // console.log(draw10());
+
+      // ข้อ11;
+      // draw11 = () => {
+      //   let num = +prompt('Insert n here!!');
+      //   let msg = '';
+      //   for (i = 1; i <= num; i++) {
+      //     for (j = 1; j <= num; j++) {
+      //       if (j !== i) {
+      //         msg += '*';
+      //       } else {
+      //         msg += '_';
+      //       }
+      //     }
+      //     msg += '\n';
+      //   }
+      //   return msg;
+      // };
+      // console.log(draw11());
+
+      // ข้อ12;
+      // draw12 = () => {
+      //   let num = +prompt('Insert n here!!');
+      //   let msg = '';
+      //   for (i = num; i > 0; i--) {
+      //     for (j = 1; j <= num; j++) {
+      //       if (j === i) {
+      //         msg += '_';
+      //       } else {
+      //         msg += '*';
+      //       }
+      //     }
+      //     msg += '\n';
+      //   }
+      //   return msg;
+      // };
+      // console.log(draw12());
+
+      // ข้อ13;
+      // draw13 = () => {
+      //   let num = +prompt('Insert n here!!');
+      //   let msg = '';
+      //   for (i = 1; i <= num; i++) {
+      //     for (j = 1; j <= num; j++) {
+      //       if (j <= i) {
+      //         msg += '*';
+      //       } else {
+      //         msg += '_';
+      //       }
+      //     }
+      //     msg += '\n';
+      //   }
+      //   return msg;
+      // };
+      // console.log(draw13());
+
+      // ข้อ14;
+      // draw14 = () => {
+      //   let num = +prompt('Insert n here!!');
+      //   let msg = '';
+      //   for (i = num; i > 0; i--) {
+      //     for (j = 1; j <= num; j++) {
+      //       if (j <= i) {
+      //         msg += '*';
+      //       } else {
+      //         msg += '_';
+      //       }
+      //     }
+      //     msg += '\n';
+      //   }
+      //   return msg;
+      // };
+      // console.log(draw14());
+
+      // ข้อ15;
+      // draw15 = () => {
+      //   let num = +prompt('Insert n here!!');
+      //   let msg = '';
+      //   for (i = 1; i < num; i++) {
+      //     for (j = 1; j <= num; j++) {
+      //       if (j <= i) {
+      //         msg += '*';
+      //       } else {
+      //         msg += '_';
+      //       }
+      //     }
+      //     msg += '\n';
+      //   }
+      //   for (i = num; i > 0; i--) {
+      //     for (j = 1; j <= num; j++) {
+      //       if (j <= i) {
+      //         msg += '*';
+      //       } else {
+      //         msg += '_';
+      //       }
+      //     }
+      //     msg += '\n';
+      //   }
+      //   return msg;
+      // };
+      // console.log(draw15());
+
+      // ข้อ16;
+      // draw16 = () => {
+      //   let num = +prompt('Insert n here!!');
+      //   let msg = '';
+      //   for (i = 1; i < num; i++) {
+      //     for (j = 1; j <= num; j++) {
+      //       if (j <= i) {
+      //         msg += `${i}`;
+      //       } else {
+      //         msg += '_';
+      //       }
+      //     }
+      //     msg += '\n';
+      //   }
+      //   for (i = num; i > 0; i--) {
+      //     for (j = 1; j <= num; j++) {
+      //       if (j <= i) {
+      //         msg += `${i}`;
+      //       } else {
+      //         msg += '_';
+      //       }
+      //     }
+      //     msg += '\n';
+      //   }
+      //   return msg;
+      // };
+      // console.log(draw16());
+
+      // ข้อ17;
+      // draw17 = () => {
+      //   let num = +prompt('Insert n here!!');
+      //   let msg = '';
+      //   for (i = 1; i <= num; i++) {
+      //     for (j = 1; j <= num; j++) {
+      //       if (num - i < j) {
+      //         msg += '*';
+      //       } else {
+      //         msg += '_';
+      //       }
+      //     }
+      //     msg += '\n';
+      //   }
+      //   return msg;
+      // };
+      // console.log(draw17());
+
+      // ข้อ18;
+      // draw18 = () => {
+      //   let num = +prompt('Insert n here!!');
+      //   let msg = '';
+      //   for (i = 1; i <= num; i++) {
+      //     for (j = 1; j <= num; j++) {
+      //       if (j >= i) {
+      //         msg += '*';
+      //       } else {
+      //         msg += '_';
+      //       }
+      //     }
+      //     msg += '\n';
+      //   }
+      //   return msg;
+      // };
+      // console.log(draw18());
+
+      // ข้อ19;
+      // draw19 = () => {
+      //   let num = +prompt('Insert n here!!');
+      //   let msg = '';
+      //   for (i = 1; i < num; i++) {
+      //     for (j = 1; j <= num; j++) {
+      //       if (num - i < j) {
+      //         msg += '*';
+      //       } else {
+      //         msg += '_';
+      //       }
+      //     }
+      //     msg += '\n';
+      //   }
+      //   for (i = num; i > 0; i--) {
+      //     for (j = 1; j <= num; j++) {
+      //       if (j >= i) {
+      //         msg += '*';
+      //       } else {
+      //         msg += '_';
+      //       }
+      //     }
+      //     msg += '\n';
+      //   }
+      //   return msg;
+      // };
+      // console.log(draw19());
+
+      // ข้อ20;
+      // draw20 = () => {
+      //   let num = +prompt('Insert n here!!');
+      //   let msg = '';
+      //   let str = 1;
+      //   for (i = 1; i < num; i++) {
+      //     for (j = 1; j <= num; j++) {
+      //       if (num - i < j) {
+      //         msg += `${str}`;
+      //         str++;
+      //       } else {
+      //         msg += '_';
+      //       }
+      //     }
+      //     msg += '\n';
+      //   }
+      //   for (i = 1; i <= num; i++) {
+      //     for (j = 1; j <= num; j++) {
+      //       if (j >= i) {
+      //         msg += `${str}`;
+      //         str++;
+      //       } else {
+      //         msg += '_';
+      //       }
+      //     }
+      //     msg += '\n';
+      //   }
+      //   return msg;
+      // };
+      // console.log(draw20());
+
+      // ข้อ21;
+      // draw21 = () => {
+      //   let num = +prompt('Insert n here!!');
+      //   let msg = '';
+      //   for (i = 1; i <= num; i++) {
+      //     for (j = 1; j <= num * 2 - 1; j++) {
+      //       if (j >= num + 1 - i && j <= num - 1 + i) {
+      //         msg += '*';
+      //       } else {
+      //         msg += '_';
+      //       }
+      //     }
+      //     msg += '\n';
+      //   }
+      //   return msg;
+      // };
+      // console.log(draw21());
+
+      // ข้อ22;
+      // draw22 = () => {
+      //   let num = +prompt('Insert n here!!');
+      //   let msg = '';
+      //   for (i = 1; i <= num; i++) {
+      //     for (j = 1; j <= num * 2 - 1; j++) {
+      //       if (j <= i - 1 || j >= num * 2 - i + 1) {
+      //         msg += '_';
+      //       } else {
+      //         msg += '*';
+      //       }
+      //     }
+      //     msg += '\n';
+      //   }
+      //   return msg;
+      // };
+      // console.log(draw22());
+
+      // ข้อ23;
+      // draw23 = () => {
+      //   let num = +prompt('Insert n here!!');
+      //   let msg = '';
+      //   for (i = 1; i < num; i++) {
+      //     for (j = 1; j <= num * 2 - 1; j++) {
+      //       if (j >= num + 1 - i && j <= num - 1 + i) {
+      //         msg += '*';
+      //       } else {
+      //         msg += '_';
+      //       }
+      //     }
+      //     msg += '\n';
+      //   }
+      //   for (i = 1; i <= num; i++) {
+      //     for (j = 1; j <= num * 2 - 1; j++) {
+      //       if (j <= i - 1 || j >= num * 2 + 1 - i) {
+      //         msg += '_';
+      //       } else {
+      //         msg += '*';
+      //       }
+      //     }
+      //     msg += '\n';
+      //   }
+      //   return msg;
+      // };
+      // console.log(draw23());
+
+      // ข้อ24;
+      draw24 = () => {
+        let num = +prompt('Insert n here!!');
+        let msg = '';
+        let str = 1;
+        for (i = 1; i < num; i++) {
+          for (j = 1; j <= num * 2 - 1; j++) {
+            if (j >= num + 1 - i && j <= num - 1 + i) {
+              msg += `${str}`;
+              str++;
+            } else {
+              msg += '_';
+            }
+          }
+          msg += '\n';
+        }
+        for (i = 1; i <= num; i++) {
+          for (j = 1; j <= num * 2 - 1; j++) {
+            if (j <= i - 1 || j >= num * 2 + 1 - i) {
+              msg += '_';
+            } else {
+              msg += `${str}`;
+              str++;
+            }
+          }
+          msg += '\n';
+        }
+        return msg;
+      };
+      console.log(draw24());
+    </script>
+  </body>
+</html>
